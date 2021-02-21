@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('Pack2') {
+      steps {
+        sh 'docker build -t image1 .'
+      }
+    }
+
   }
 }
