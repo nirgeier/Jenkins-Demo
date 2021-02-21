@@ -13,8 +13,13 @@ pipeline {
     }
 
     stage('Pack') {
+      agent {
+        docker {
+          image 'node'
+        }
+
+      }
       steps {
-        sh 'docker build .'
         sh 'docker build .'
       }
     }
