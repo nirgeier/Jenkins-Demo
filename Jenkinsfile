@@ -12,5 +12,12 @@ pipeline {
       }
     }
 
+    stage('Pack') {
+      steps {
+        sh 'docker build .'
+        sh 'docker build .'
+      }
+    }
+
   }
 }
