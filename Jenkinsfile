@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'node'
+    }
+
+  }
   stages {
     stage('Build') {
       parallel {
@@ -18,7 +23,7 @@ pipeline {
       }
     }
 
-    stage('error') {
+    stage('Dummy') {
       steps {
         sh 'docker build -t image1 .'
       }
