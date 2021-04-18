@@ -9,9 +9,11 @@ pipeline {
 
     stage('Test1') {
       steps {
-        sh 'echo \'Welcome\''
+        sh 'echo \'Welcome home\''
+      }
+      steps {
+        sh 'echo \'Welcome home2\''
       }
     }
-
   }
 }
