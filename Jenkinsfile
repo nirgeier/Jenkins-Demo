@@ -11,9 +11,6 @@ pipeline {
       steps {
         sh 'echo \'Welcome home\''
       }
-      steps {
-        sh 'echo \'Welcome home2\''
-      }
     }
   }
 }
