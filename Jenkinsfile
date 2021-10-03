@@ -24,5 +24,12 @@ pipeline {
       }
     }
 
+    stage('Test33') {
+      steps {
+        echo 'test'
+        sh 'echo \'Welcome2\''
+      }
+    }
+
   }
 }
