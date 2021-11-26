@@ -24,5 +24,11 @@ pipeline {
       }
     }
 
+    stage('Docker') {
+      steps {
+        sh 'echo \'Docker2\''
+      }
+    }
+
   }
 }
