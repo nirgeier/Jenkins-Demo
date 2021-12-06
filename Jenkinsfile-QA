@@ -12,7 +12,7 @@ pipeline {
           steps {
             sh 'node --version'
           }
-        }
+        
 
         stage('Docker') {
           steps {
