@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'docker --version'
+        sh '''docker --version
+docker run busybox
+'''
       }
     }
 
