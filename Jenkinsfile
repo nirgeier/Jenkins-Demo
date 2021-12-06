@@ -14,7 +14,7 @@ pipeline {
             sh 'echo \'Welcome home\''
           }
         }
-
+      }
         stage('Test2') {
           steps {
             sh 'echo 3'
